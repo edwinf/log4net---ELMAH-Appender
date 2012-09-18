@@ -4,3 +4,8 @@ obj
 
 # mstest test results
 TestResults
+
+#using nuget package restore, don't commit installed packages
+packages
+
+*.suo
