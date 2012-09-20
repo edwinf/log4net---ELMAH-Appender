@@ -5,23 +5,23 @@ This appender will allow log4net to be configured to send log messages to ELMAH 
 
 Sample Log4net config:
 <pre><code>
-&gt;log4net&lt;
-    &gt;appender name="elmahappender" type="elmahappender_log4net.ELMAHAppender, elmahappender_log4net"&lt;
-      &gt;layout type="log4net.Layout.PatternLayout"&lt;
-        &gt;conversionPattern value="%date [thread] %-5level %logger - %message%newline" /&lt;
-      &gt;/layout&lt;
-    &gt;/appender&lt;
-    &gt;root&lt;
-      &gt;level value="ALL" /&lt;
-      &gt;appender-ref ref="elmahappender" /&lt;
-    &gt;/root&lt;
-  &gt;/log4net&lt;
+&lt;log4net&gt;
+    &lt;appender name="elmahappender" type="elmahappender_log4net.ELMAHAppender, elmahappender_log4net"&gt;
+      &lt;layout type="log4net.Layout.PatternLayout"&gt;
+        &lt;conversionPattern value="%date [thread] %-5level %logger - %message%newline" /&gt;
+      &lt;/layout&gt;
+    &lt;/appender&gt;
+    &lt;root&gt;
+      &lt;level value="ALL" /&gt;
+      &lt;appender-ref ref="elmahappender" /&gt;
+    &lt;/root&gt;
+  &lt;/log4net&gt;
   </code></pre>
   My elmah config:
   <pre><code>
-  &gt;elmah&lt;
-    &gt;errorLog type="Elmah.SqlErrorLog, Elmah" connectionStringName="connString" applicationName="TTDev" /&lt;
-  &gt;/elmah&lt;
+  &lt;elmah&gt;
+    &lt;errorLog type="Elmah.SqlErrorLog, Elmah" connectionStringName="connString" applicationName="TTDev" /&gt;
+  &lt;/elmah&gt;
   </code></pre>
   Note: For the sql error log, I had to put the application name on the config.  For v1 I could not figure out how to pass the application name
   through the log4net log, it would ignore what I passed as the app name and just insert an empty string.  The application not matching caused the display handler to not display those log entries.
