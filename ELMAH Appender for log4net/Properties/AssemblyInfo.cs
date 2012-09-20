@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ELMAH Appender for log4net")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Rosetta")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ELMAH Appender for log4net")]
-[assembly: AssemblyCopyright("Copyright © Rosetta 2012")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
