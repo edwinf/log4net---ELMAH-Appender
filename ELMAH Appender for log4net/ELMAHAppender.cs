@@ -21,7 +21,7 @@ namespace elmahappender_log4net
 			_HostName = Environment.MachineName;
 			try
 			{
-				this._ErrorLog = ErrorLog.GetDefault(HttpContext.Current);
+				this._ErrorLog = ErrorLog.GetDefault(null);
 			}
 			catch (Exception ex)
 			{
