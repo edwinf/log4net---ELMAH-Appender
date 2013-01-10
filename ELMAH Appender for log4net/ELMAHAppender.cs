@@ -14,6 +14,7 @@ namespace elmahappender_log4net
 		private string _HostName;
 		private ErrorLog _ErrorLog;
 
+		public bool UseNullContext { get; set; }
 
 		public override void ActivateOptions()
 		{
@@ -21,13 +22,21 @@ namespace elmahappender_log4net
 			_HostName = Environment.MachineName;
 			try
 			{
-				this._ErrorLog = ErrorLog.GetDefault(HttpContext.Current);
+				if (UseNullContext)
+				{
+					this._ErrorLog = ErrorLog.GetDefault(null);
+				}
+				else
+				{
+					this._ErrorLog = ErrorLog.GetDefault(HttpContext.Current);
+				}
 			}
 			catch (Exception ex)
 			{
 				this.ErrorHandler.Error("Could not create default ELMAH error log", ex);
 			}
 		}
+
 
 		protected override void Append(log4net.Core.LoggingEvent loggingEvent)
 		{
