@@ -1,16 +1,14 @@
 ﻿using Elmah;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using log4net.Appender;
+using log4net.Core;
 using System.Web;
 
-namespace elmahappender_log4net
+namespace ElmahAppender.log4net
 {
-	public class ELMAHAppender : log4net.Appender.AppenderSkeleton
+	public class ElmahAppender : AppenderSkeleton
 	{
-		private readonly static Type _DeclaringType = typeof(ELMAHAppender);
+		private readonly static Type _DeclaringType = typeof(ElmahAppender);
 		private string _HostName;
 		private ErrorLog _ErrorLog;
 
@@ -37,8 +35,7 @@ namespace elmahappender_log4net
 			}
 		}
 
-
-		protected override void Append(log4net.Core.LoggingEvent loggingEvent)
+		protected override void Append(LoggingEvent loggingEvent)
 		{
 			if (this._ErrorLog != null)
 			{
