@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElmahAppender.log4net", "ElmahAppender.log4net\ElmahAppender.log4net.csproj", "{A69D908D-0400-46A6-8221-2D6C9351F477}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Debug|x64.Build.0 = Debug|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Debug|x86.Build.0 = Debug|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Release|x64.ActiveCfg = Release|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Release|x64.Build.0 = Release|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Release|x86.ActiveCfg = Release|Any CPU
+		{A69D908D-0400-46A6-8221-2D6C9351F477}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {853D1168-28B3-4AA3-BECC-8D1E3222E837}
+	EndGlobalSection
+EndGlobal
